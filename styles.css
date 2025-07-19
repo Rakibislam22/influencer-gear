@@ -79,5 +79,62 @@ nav {
 }
 
 .sp img {
-    padding: 40px 40px;
+    padding: 40px ;
+}
+.brands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 576px) {
+    .margine {
+        margin: 0 auto;
+    }
+
+    nav {
+       flex-direction: column;
+
+    
+    }
+
+    .bannar{
+        flex-direction: column-reverse;
+        margin: 30px auto;
+        padding-top: 40px;
+        background-position: top;
+        background-size: 80%;
+
+        text-align: center;
+        
+    }
+
+    .b-title{
+        font-size: 1.75rem;
+    }
+    .image img{
+        width: 80%;
+        padding-left: 30px;
+        
+    }
+
+    .anchor ul {
+
+        gap: 15px;
+    }
+
+    .sp {
+        margin: 0 auto;
+        max-width: 280px;
+        border: none;
+    }
+
+    .sp img {
+        padding: 10px ;
+        max-width: 50px;
+    }
+
+
+
 }
