@@ -138,9 +138,73 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 30px;
     column-gap: 30px;
-    margin: 0px 196px 100px 196px;
+    margin: 0px 196px ;
 }
 
+.more-btn{
+    border: none;
+    background-color: transparent;
+    float: inline-end;
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+    margin: 50px 220px 100px 0px ;
+}
+
+.g-titele{
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #0A0826;
+}
+.g-des{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #6C6C6C;
+}
+
+.bbbbton {
+    border-radius: 0px;
+}
+
+.gear-des{
+    max-width: 600px;
+}
+
+.gear{
+    display: flex;
+    gap: 200px;
+
+    margin: 200px 165px 100px 165px;
+}
+
+.foot{
+    background-color: #0A0826;
+    padding: 50px 590px;
+    text-align: center;
+    color: white;
+}
+
+.foot-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.copy{
+    font-size: 0.9rem;
+    color: rgba(217, 219, 225, 1);
+}
+
+.link li ,.link li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.link {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -155,7 +219,8 @@ nav {
 
     .anchor ul{
         flex-direction: column;
-        padding-right: 200px;
+        padding-right: 50px;
+        text-align: center;
     }
 
 
@@ -179,10 +244,6 @@ nav {
         
     }
 
-    .anchor ul {
-
-        gap: 15px;
-    }
 
     .sp {
         margin: 0 auto;
@@ -197,7 +258,38 @@ nav {
     .cards {
         grid-template-columns: repeat(1, 1fr);
         margin: 0 auto;
+        justify-items: center;
     }
 
+    .more-btn{
+        margin: 20px auto 0px 0px ;
+    }
+    
+    .gear{
+        flex-direction: column-reverse;
+        margin: 200px 0px 100px 0px;
+        text-align: center;
+        gap: none;
+    }
+
+    .gear img{
+        width: 100%;
+    }
+
+    .gear-des{
+        margin-top: 0px;
+    }
+    .foot{
+        margin: 0 auto;
+        padding: 50px 60px;
+    }
+
+    .foot-title {
+        font-size: 1rem;
+    }
+
+    .copy{
+        font-size: 0.7rem;
+    }
 
 }
