@@ -87,6 +87,61 @@ nav {
     justify-content: center;
 }
 
+.Popular-t{
+    font-size: 1.75rem;
+    color: #3A3A3A;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+
+.card{
+    padding: 14px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    max-width: 330px;
+    border-radius: 5px;
+}
+
+.product{
+    width: 100%;
+}
+
+.title{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #18191F;
+    
+}
+
+.value{
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+    margin: 0px;
+}
+
+.des{
+    color: rgba(120, 120, 133, 1);
+    font-weight: 700;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+    margin: 0px 196px 100px 196px;
+}
+
+
 
 @media screen and (max-width: 576px) {
     .margine {
@@ -95,9 +150,14 @@ nav {
 
     nav {
        flex-direction: column;
-
     
     }
+
+    .anchor ul{
+        flex-direction: column;
+        padding-right: 200px;
+    }
+
 
     .bannar{
         flex-direction: column-reverse;
@@ -134,7 +194,10 @@ nav {
         padding: 10px ;
         max-width: 50px;
     }
-
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
 
 
 }
